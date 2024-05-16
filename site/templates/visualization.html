@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualization</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Отчет по сотруднику {{id}}</h1>
+        <h2>Оценка и вклад ключевых показателей</h2>
+        <img src="data:image/png;base64,{{ shap_img }}" alt="Visualization">
+        <h2>Рекомендации</h2>
+        <p>{{ description }}</p>
+        <!-- <img src="data:image/png;base64,{{ shap_img }}" alt="Visualization"> -->
+        <h2>Прогнозируемые показатели</h2>
+        <!-- table genearted from pandas -->
+        <img src="data:image/png;base64,{{ prediction_plot }}" alt="predictions"> 
+        {{ html_report | safe }}  
+    </div>
+</body>
+</html>

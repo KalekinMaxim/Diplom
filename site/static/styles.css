@@ -1,0 +1,100 @@
+/* static/styles.css */
+
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 70%;
+}
+/* static/styles.css */
+
+
+/* Column List */
+.column-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    -webkit-column-count: 6; /* Chrome, Safari, Opera */
+    -moz-column-count: 6; /* Firefox */
+    column-count: 6;
+    max-width: 90%;
+    margin: auto;
+    text-align: justify;
+}
+
+.column-list li {
+    margin-bottom: 10px;
+}
+
+.column-list li a {
+    text-decoration: none;
+    color: #666;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.column-list li a:hover {
+    color: #000;
+}
+p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5; /* Adjust the line-height to increase spacing */
+    text-indent: 20px; /* Adjust the indentation of the first line */
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #333;
+}
